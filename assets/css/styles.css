@@ -12,15 +12,21 @@ body {
   padding: 0;
 }
 
+
 .swiper-container {
+  position: relative;
   width: 100%;
   height: 100%;
+  background-image: url('../images/bg-ub2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -35,4 +41,21 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  font-size: 5rem;
+  color: #fff;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #dc4225, #002f4b);
+  /* background-image: linear-gradient(to bottom right, #792111, #3d5767); */
+
+  opacity: .4;
+
 }
